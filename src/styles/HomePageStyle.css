@@ -1,0 +1,32 @@
+@keyframes hello {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.hello {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    font-size: 12vw;
+    font-weight: 900;
+    color: #2d2f24;
+    text-align: center;
+    animation-duration: 2s;
+    animation-name: hello;
+}
+.section {
+    padding: 0 100px;
+    font-size: 28px;
+}
+@media (max-width: 768px) {
+    /* 모바일에 사용될 스트일 시트를 여기에 작성합니다. */
+    .section {
+        padding: 0 50px;
+        font-size: 24px;
+    }
+}

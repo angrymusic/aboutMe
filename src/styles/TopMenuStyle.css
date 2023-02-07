@@ -1,5 +1,45 @@
-.top-menu-bar{
+@keyframes brighter {
+    0% {
+        filter: brightness(1);
+    }
+    100% {
+        filter: brightness(1.2);
+    }
+}
+.top-menu-bar {
     background-color: #464839;
+    color: #f0f2e3;
     width: 100vw;
     height: 48px;
+    font-size: 16px;
+}
+.icon {
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 48px;
+    height: 48px;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+}
+.icon:hover{
+    animation-duration: 1s;
+    animation-name: brighter;
+}
+.menu {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-item {
+    margin: 0 20px;
+    cursor: pointer;
+}
+.menu-item:hover {
+    color: white;
+    animation-duration: 1s;
+    animation-name: brighter;
 }

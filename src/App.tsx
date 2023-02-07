@@ -1,14 +1,16 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
 import TopMenu from "./components/TopMenu";
+import HomePage from "./pages/HomePage";
+import ProjectPage from "./pages/ProjectPage";
 function App() {
     return (
         <div className="App">
-            <TopMenu></TopMenu>
             <BrowserRouter>
+                <TopMenu></TopMenu>
                 <Routes>
                     <Route path="/" element={<HomePage />}></Route>
+                    <Route path="/projects" element={<ProjectPage />}></Route>
                 </Routes>
             </BrowserRouter>
         </div>
